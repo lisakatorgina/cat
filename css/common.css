@@ -1,0 +1,137 @@
+body,
+html {
+  background: #fff;
+  color: green;
+}
+
+.cat {
+  margin: 100px;
+}
+.cat__head {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 2;
+}
+.cat__oval {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: url('../i/1.gif');
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  -webkit-transform: scale(1.1, 0.9);
+  transform: scale(1.1, 0.9);
+  box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  background-size: cover;
+}
+.cat__nose {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  position: absolute;
+  border-radius: 50%;
+  top: 125px;
+  left: 50%;
+  margin-left: -10px;
+  border: 2px solid HotPink;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  box-sizing: border-box;
+  -webkit-transform: scale(1, 0.7);
+  transform: scale(1, 0.7);
+}
+.cat__nose:before {
+  background: rgba(0, 0, 0, 0.2);
+  width: 24px;
+  height: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: -2px;
+  -webkit-transform: rotateX(-40deg);
+  transform: rotateX(-40deg);
+}
+.cat__eye {
+  width: 30px;
+  height: 30px;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  top: 70px;
+}
+.cat__eye_left {
+  left: 50px;
+}
+.cat__eye_right {
+  right: 50px;
+}
+.cat__eye:before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+.cat__eye:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.cat__ears {
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  height: 60px;
+  overflow: hidden;
+}
+.cat__ear {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: url('../i/1.gif');
+  background-size: cover;
+  top: 9px;
+  border-radius: 10px;
+}
+.cat__ear_left {
+  left: 12px;
+  -webkit-transform: skew(20deg) rotate(17deg);
+  transform: skew(20deg) rotate(17deg);
+}
+.cat__ear_right {
+  right: 12px;
+  -webkit-transform: skew(-20deg) rotate(-17deg);
+  transform: skew(-20deg) rotate(-17deg);
+}
+.cat__mouth {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 3px solid transparent;
+  border-left-color: HotPink;
+  border-top-color: HotPink;
+  left: 50%;
+  top: 150px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: -6px;
+}
+.cat svg {
+  position: relative;
+  top: -20px;
+}
+.cat svg polygon {
+  fill: url(#img1);
+}

@@ -1,0 +1,128 @@
+@import '../../base.less';
+.cat {
+	margin: 100px;
+	&__head {
+		display: block;
+		width: 200px;
+		height: 200px;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__oval {
+		display: block;
+		width: 200px;
+		height: 200px;
+		background: url('../i/1.gif');
+		position: absolute;
+		top: 0;
+		left: 0;
+		.round();
+		transform: scale(1.1, 0.9);
+		box-shadow: inset 0 0 20px 0 rgba(0,0,0,0.2);
+		background-size: cover;
+	}
+
+	&__nose {
+		width: 20px;
+		height: 20px;
+		background: #000;
+		position: absolute;
+		border-radius: 50%;
+		top: 125px;
+		left: 50%;
+		margin-left: -10px;
+		border: 2px solid HotPink;
+		perspective: 100px;
+		box-sizing: border-box;
+		transform: scale(1,0.7);
+		&:before {
+			//content: '';
+			background: rgba(0,0,0,0.2);
+			width: 24px;
+			height: 60px;
+			position: absolute;
+			bottom: 10px;
+			left: -2px;
+			transform: rotateX(-40deg);
+		}
+	}
+	&__eye {
+		width: 30px;
+		height: 30px;
+		background: green;
+		border-radius: 50%;
+		position: absolute;
+		border: 2px solid rgba(0,0,0,0.5);
+		top: 70px;
+		&_left {
+			left: 50px;
+		}
+		&_right {
+			right: 50px;
+		}
+		&:before {
+			content: '';
+			width: 10px;
+			height: 20px;
+			background: #000;
+			border-radius: 50%;
+			position: absolute;
+			top: 5px;
+			left: 10px;
+		}
+		&:after {
+			content: '';
+			width: 5px;
+			height: 5px;
+			background: #fff;
+			border-radius: 50%;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+	}
+	&__ears {
+		position: absolute;
+		width: 100%;
+		top: -5px;
+		height: 60px;
+		overflow: hidden;
+	}
+	&__ear {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background: url('../i/1.gif');
+		background-size: cover;
+		top: 9px;
+		border-radius: 10px;
+		&_left {
+			left: 12px;
+			transform: skew(20deg) rotate(17deg);
+		}
+		&_right {
+			right: 12px;
+			transform: skew(-20deg) rotate(-17deg);
+		}
+	}
+	&__mouth {
+		position: absolute;
+		width: 7px;
+		height: 7px;
+		border: 3px solid transparent;
+		border-left-color: HotPink;
+		border-top-color: HotPink;
+		left: 50%;
+		top: 150px;
+		transform: rotate(45deg);
+		margin-left: -6px;
+	}
+	svg {
+		position: relative;
+		top: -20px;
+		polygon {
+			fill: url(#img1);
+		}
+	}
+}
