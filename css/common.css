@@ -1,11 +1,6 @@
-body,
-html {
-  background: #fff;
-  color: green;
-}
-
 .cat {
-  margin: 100px;
+  margin: 20px auto;
+  width: 200px;
 }
 .cat__head {
   display: block;
@@ -18,7 +13,7 @@ html {
   display: block;
   width: 200px;
   height: 200px;
-  background: url('../i/1.gif');
+  background: url('../i/3.gif');
   position: absolute;
   top: 0;
   left: 0;
@@ -31,33 +26,40 @@ html {
 .cat__nose {
   width: 20px;
   height: 20px;
-  background: #000;
+  background: url('../i/4.gif') 50% 50%;
+  background-size: 50px 50px;
   position: absolute;
   border-radius: 50%;
-  top: 125px;
+  top: 120px;
   left: 50%;
   margin-left: -10px;
-  border: 2px solid HotPink;
   -webkit-perspective: 100px;
   perspective: 100px;
   box-sizing: border-box;
   -webkit-transform: scale(1, 0.7);
   transform: scale(1, 0.7);
 }
-.cat__nose:before {
-  background: rgba(0, 0, 0, 0.2);
-  width: 24px;
-  height: 60px;
+.cat__nose:before,
+.cat__nose:after {
+  content: '';
+  background: #000;
   position: absolute;
-  bottom: 10px;
-  left: -2px;
-  -webkit-transform: rotateX(-40deg);
-  transform: rotateX(-40deg);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 12px;
+}
+.cat__nose:before {
+  left: 1px;
+}
+.cat__nose:after {
+  right: 1px;
 }
 .cat__eye {
   width: 30px;
   height: 30px;
-  background: green;
+  background: url('../i/5.gif');
+  background-size: cover;
   border-radius: 50%;
   position: absolute;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -100,7 +102,7 @@ html {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: url('../i/1.gif');
+  background: url('../i/3.gif');
   background-size: cover;
   top: 9px;
   border-radius: 10px;
@@ -117,8 +119,8 @@ html {
 }
 .cat__mouth {
   position: absolute;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border: 3px solid transparent;
   border-left-color: HotPink;
   border-top-color: HotPink;
@@ -127,6 +129,8 @@ html {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-left: -6px;
+  opacity: 0.3;
+  border-radius: 5px;
 }
 .cat svg {
   position: relative;
@@ -134,4 +138,13 @@ html {
 }
 .cat svg polygon {
   fill: url(#img1);
+}
+
+body,
+html {
+  background: #000;
+  color: #fff;
+}
+h1 {
+  text-align: center;
 }
