@@ -1,6 +1,11 @@
 .cat {
   margin: 20px auto;
   width: 200px;
+  transition: all 0.5s;
+}
+.cat:hover {
+  -webkit-transform: scale(1.5) translateY(70px);
+  transform: scale(1.5) translateY(70px);
 }
 .cat__head {
   display: block;
