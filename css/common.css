@@ -163,16 +163,25 @@
   left: -25px;
   opacity: 0;
   transition: all 0.5s;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .cat svg polygon {
   fill: url(#img1);
+}
+.cat svg .legs {
+  stroke: #000;
+  stroke-width: 5;
+}
+.cat svg line {
+  stroke: #000;
+  stroke-width: 5;
 }
 
 body,
 html {
   background: #000;
   color: #fff;
+  height: 100%;
 }
 h1 {
   text-align: center;
