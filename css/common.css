@@ -4,8 +4,8 @@
   transition: all 0.5s;
 }
 .cat:hover {
-  -webkit-transform: scale(1.5) translateY(70px);
-  transform: scale(1.5) translateY(70px);
+  -webkit-transform: scale(1.1) translateY(10px);
+  transform: scale(1.1) translateY(10px);
 }
 .cat:hover .cat__oval,
 .cat:hover svg,
@@ -175,6 +175,9 @@
 .cat svg line {
   stroke: #000;
   stroke-width: 5;
+}
+.cat svg .stomack {
+  fill: url(#img1);
 }
 
 body,
