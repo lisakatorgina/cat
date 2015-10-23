@@ -8,7 +8,7 @@
   transform: scale(1.1) translateY(10px);
 }
 .cat:hover .cat__oval,
-.cat:hover svg,
+.cat:hover .cat__body,
 .cat:hover .cat__ears,
 .cat:hover .cat__nose {
   opacity: 1;
@@ -129,6 +129,7 @@
   height: 80px;
   background: url('../i/3.gif');
   background-size: 300px 300px;
+  background-position: 50% 50%;
   top: 9px;
   border-radius: 10px;
 }
@@ -158,30 +159,13 @@
   opacity: 0;
   transition: all 0.5s;
 }
-.cat svg {
+.cat__body {
   position: relative;
   top: -30px;
   left: -25px;
   opacity: 0;
   transition: all 0.5s;
   border-radius: 20px;
-}
-.cat svg .body {
-  fill: url(#img1);
-}
-.cat svg .legs {
-  stroke: #000;
-  stroke-width: 5;
-  fill: url(#img1);
-}
-.cat svg line {
-  stroke: #000;
-  stroke-width: 5;
-}
-.cat svg .stomack {
-  fill: url(#img1);
-}
-.cat svg .tail {
   fill: url(#img1);
 }
 
@@ -193,4 +177,12 @@ html {
 }
 h1 {
   text-align: center;
+}
+.github-link {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.github-link a {
+  color: #fff;
 }

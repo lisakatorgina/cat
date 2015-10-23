@@ -8,12 +8,10 @@
 		.cat__eye.cat__eye_left
 		.cat__eye.cat__eye_right
 		.cat__mouth
-	svg(height="250" width="350")
-		ellipse.tail(cx=250 cy=225 rx=100 ry=25)
-		polygon.body(points="60,0 190,0 230,150 20,150")
-		ellipse.stomack(cx=125 cy=150 rx=125 ry=100)
-		polygon.legs(points="60,0 190,0 160,250 90,250")
-		line(x1="125" y1="100" x2="125" y2="250")
+	svg.cat__body(height="250" width="350")
+		ellipse(cx=250 cy=225 rx=100 ry=25)
+		polygon(points="60,0 190,0 230,150 20,150")
+		ellipse(cx=125 cy=150 rx=125 ry=100)
 		defs
 			pattern(id="img1" patternUnits="userSpaceOnUse" width="300" height="300")
 				image(xlink:href="i/3.gif" x="0" y="0" width="300" height="300")
