@@ -195,3 +195,11 @@ html {
 h1 {
   text-align: center;
 }
+.github-link {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.github-link a {
+  color: #fff;
+}
