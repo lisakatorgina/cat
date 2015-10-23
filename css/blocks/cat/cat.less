@@ -5,7 +5,7 @@
 	transition: all 0.5s;
 	&:hover {
 		transform: scale(1.1) translateY(10px);
-		.cat__oval, svg, .cat__ears, .cat__nose {
+		.cat__oval, .cat__body, .cat__ears, .cat__nose {
 			opacity: 1;
 		}
 		.cat__mouth {
@@ -146,30 +146,13 @@
 		border-radius: 5px;
 		.hidden();
 	}
-	svg {
+	&__body {
 		position: relative;
 		top: -30px;
 		left: -25px;
 		.hidden();
 		border-radius: 20px;
-		.body {
-			fill: url(#img1);
-		}
-		.legs {
-			stroke: #000;
-			stroke-width: 5;
-			fill: url(#img1);
-		}
-		line {
-			stroke: #000;
-			stroke-width: 5;
-		}
-		.stomack {
-			fill: url(#img1);
-		}
-		.tail {
-			fill: url(#img1);
-		}
+		fill: url(#img1);
 	}
 }
 .hidden() {
