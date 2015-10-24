@@ -1,7 +1,7 @@
 .b-cat {
   margin: 100px auto;
   border: 1px solid #000;
-  width: 450px;
+  width: 430px;
   height: 390px;
   position: relative;
 }
@@ -13,7 +13,7 @@
   top: 0;
   left: 0;
   background: url('../i/bem.png') 0 0 no-repeat;
-  background-size: 100% auto;
+  background-size: contain;
   opacity: 0.4;
 }
 .b-cat * {
@@ -122,6 +122,30 @@
   top: 0;
   -webkit-transform: scale(0.3, 1);
   transform: scale(0.3, 1);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+}
+.layout {
+  background: #000;
+  color: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+.github-link {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.github-link a {
+  color: #fff;
 }
 
 .cat {
@@ -293,28 +317,4 @@
   transition: all 0.5s;
   border-radius: 20px;
   fill: url(#img1);
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  text-align: center;
-}
-.layout {
-  background: #000;
-  color: #fff;
-  height: 100%;
-  overflow: hidden;
-}
-.github-link {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-}
-.github-link a {
-  color: #fff;
 }
