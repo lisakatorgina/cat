@@ -1,19 +1,19 @@
-.cat &nbsp;
-	.cat__head
-		.cat__ears
-			.cat__ear.cat__ear_left
-			.cat__ear.cat__ear_right
-		.cat__oval
-		.cat__nose
-		.cat__eye.cat__eye_left
-		.cat__eye.cat__eye_right
-		.cat__mouth
-	svg.cat__body(height="250" width="350")
++b.cat &nbsp;
+	+e.head
+		+e.ears
+			+e.ear._left
+			+e.ear._right
+		+e.oval
+		+e.nose
+		+e.eye._left
+		+e.eye._right
+		+e.mouth
+	+e('svg').body(height="250" width="350")
 		ellipse(cx=250 cy=225 rx=100 ry=25)
 		polygon(points="60,0 190,0 230,150 20,150")
 		ellipse(cx=125 cy=150 rx=125 ry=100)
 		defs
 			pattern(id="img1" patternUnits="userSpaceOnUse" width="300" height="300")
 				image(xlink:href="i/3.gif" x="0" y="0" width="300" height="300")
-	audio(loop)
+	+e('audio').purr(loop)
 		source(src="purr.mp3" type="audio/mp3")

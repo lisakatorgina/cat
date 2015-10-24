@@ -1,3 +1,129 @@
+.b-cat {
+  margin: 100px auto;
+  border: 1px solid #000;
+  width: 450px;
+  height: 390px;
+  position: relative;
+}
+.b-cat:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('../i/bem.png') 0 0 no-repeat;
+  background-size: 100% auto;
+  opacity: 0.4;
+}
+.b-cat * {
+  position: absolute;
+  background: #000;
+  z-index: 2;
+}
+.b-cat__neck {
+  width: 100px;
+  height: 182px;
+  top: 90px;
+  left: 15px;
+  border-radius: 40px 40px 0 100px;
+}
+.b-cat__head {
+  width: 120px;
+  height: 100px;
+  border-radius: 50%;
+  left: 0;
+  top: 10px;
+}
+.b-cat__body {
+  width: 270px;
+  height: 150px;
+  border-radius: 50%;
+  left: 0;
+  top: 135px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.b-cat__arm {
+  width: 30px;
+  height: 112px;
+  border-radius: 0 0 40px 40px;
+  top: 228px;
+}
+.b-cat__arm_left {
+  left: 45px;
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.b-cat__arm_right {
+  left: 50px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.b-cat__leg {
+  width: 130px;
+  height: 30px;
+  border-radius: 40px;
+  top: 310px;
+  left: 90px;
+}
+.b-cat__ear {
+  width: 50px;
+  height: 70px;
+  border-radius: 10px;
+  top: 5px;
+}
+.b-cat__ear_left {
+  -webkit-transform: skew(30deg) rotate(30deg);
+  transform: skew(30deg) rotate(30deg);
+  left: 10px;
+}
+.b-cat__ear_right {
+  -webkit-transform: skew(-30deg) rotate(-30deg);
+  transform: skew(-30deg) rotate(-30deg);
+  left: 60px;
+}
+.b-cat__butt {
+  width: 140px;
+  height: 150px;
+  border-radius: 50%;
+  top: 190px;
+  left: 108px;
+}
+.b-cat__tail {
+  width: 200px;
+  height: 60px;
+  border-radius: 0 100px 0 100px;
+  left: 215px;
+  top: 315px;
+}
+.b-cat__eye {
+  background: green!important;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 35px;
+  border: 1px solid green;
+}
+.b-cat__eye_left {
+  left: 30px;
+}
+.b-cat__eye_right {
+  left: 72px;
+}
+.b-cat__eye:before {
+  content: "";
+  background: #000;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  -webkit-transform: scale(0.3, 1);
+  transform: scale(0.3, 1);
+}
+
 .cat {
   margin: 20px auto;
   width: 200px;
@@ -171,12 +297,18 @@
 
 body,
 html {
-  background: #000;
-  color: #fff;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 h1 {
   text-align: center;
+}
+.layout {
+  background: #000;
+  color: #fff;
+  height: 100%;
+  overflow: hidden;
 }
 .github-link {
   position: absolute;
